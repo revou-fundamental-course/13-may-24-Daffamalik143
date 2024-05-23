@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Luas Segitiga</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="keliling.html">Keliling Segitiga</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="luas">
+            <h2>Hitung Luas Segitiga</h2>
+            <div>
+                <img src="Assets/luas.png" alt="gambar rumus">
+            </div>
+            <div>
+                <p>Rumus Hitung luas segitiga:</p>
+                <p><Strong>L = 1/2 x a x t</Strong>
+                    <br>
+                    <br>Dimana: 
+                    <br>L = Luas
+                    <br>a = Alas
+                    <br>t = Tinggi
+                </p>
+            </div>
+            <form id="luasForm">
+                <label for="alas">Alas:</label>
+                <input type="number" id="alas" name="alas" required>
+                <label for="tinggi">Tinggi:</label>
+                <input type="number" id="tinggi" name="tinggi" required>
+                <div class="buttons">
+                    <button type="submit" class="btn-hitung">Hitung</button>
+                    <button type="button" id="resetKeliling" class="btn-reset">Reset</button>
+                </div>                
+                <p id="luasHitung"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

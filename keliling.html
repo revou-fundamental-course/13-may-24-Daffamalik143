@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Keliling Segitiga</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="luas.html">Hitung Luas</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="keliling">
+            <h2>Hitung Keliling Segitiga</h2>
+            <div>
+                <img src="Assets/Keliling.png" alt="gambar rumus">
+            </div>
+            <div>
+                <p>Rumus Hitung keliling segitiga:</p>
+                <p><Strong>K = S1 + S2 + S3</Strong><br>
+                    <br>Dimana: 
+                    <br>K = Keliling
+                    <br>S1 = Sisi A 
+                    <br>S2 = Sisi B
+                    <br>S3 = Sisi C 
+                </p>
+
+            </div>
+            <form id="kelilingForm">
+                <label for="sisi1">Sisi 1:</label>
+                <input type="number" id="sisi1" name="sisi1" required>
+                <label for="sisi2">Sisi 2:</label>
+                <input type="number" id="sisi2" name="sisi2" required>
+                <label for="sisi3">Sisi 3:</label>
+                <input type="number" id="sisi3" name="sisi3" required>
+                <div class="buttons">
+                    <button type="submit" class="btn-hitung">Hitung</button>
+                    <button type="button" id="resetKeliling" class="btn-reset">Reset</button>
+                </div>                
+                <p id="kelilingHitung"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
